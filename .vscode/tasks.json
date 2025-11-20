@@ -8,6 +8,8 @@
             "args": [
                 "main.c",
                 "menuLivros.c",
+                "menuUsuarios.c",
+                "menuEmprestimos.c",
                 "-o",
                 "output/main.exe"
             ],

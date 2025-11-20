@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "menulivros.h"
-int menuEmprestimos() { return 0;}
-int menuUsuarios() { return 0;}
-
+#include "menuUsuarios.h"
+#include "menuEmprestimos.h"
 
 int main(){
     int opcao = 0;
@@ -20,7 +19,7 @@ int main(){
                 menuUsuarios();
                 break;
             case 2:
-                menuLivros();
+                menuLivros(); //funcionando
                 break;
             case 3:
                 menuEmprestimos();
