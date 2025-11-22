@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "menulivros.h"
-int cadastroLivro() { return 0;}
-int listarLivros() { return 0;}
-int pesquisarLivros() { return 0;}
+#include "funcoes.h"
+#include "models.h"
+int buscarLivros() {return 0;}
+int listarLivros() {return 0;}
+int cadastroLivro() {return 0;}
 
 int menuLivros(){
     int opcao = 0;
@@ -22,7 +24,7 @@ int menuLivros(){
                 listarLivros();
                 break;
             case 3:
-                pesquisarLivros();
+                buscarLivros();
                 break;
             case 4:
                 break; //Voltar para o inicio

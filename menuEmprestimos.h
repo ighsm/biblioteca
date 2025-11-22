@@ -2,5 +2,6 @@
 #define MENU_EMPRESTIMOS_H
 
 int menuEmprestimos();
-
+int realizarEmprestimo();
+int listarEmprestimos();
 #endif

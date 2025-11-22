@@ -2,6 +2,8 @@
 #include "menulivros.h"
 #include "menuUsuarios.h"
 #include "menuEmprestimos.h"
+#include "funcoes.h"
+#include "models.h"
 
 int main(){
     int opcao = 0;
@@ -16,7 +18,7 @@ int main(){
 
         switch(opcao){
             case 1:
-                menuUsuarios();
+                menuUsuarios(); // funcionando
                 break;
             case 2:
                 menuLivros(); //funcionando
