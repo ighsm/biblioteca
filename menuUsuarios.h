@@ -4,6 +4,6 @@
 
 int menuUsuarios();
 //int cadastroUsuario();
-//nt buscarUsuario();
+//int buscarUsuario();
 
 #endif

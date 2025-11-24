@@ -6,7 +6,7 @@ int realizarEmprestimo() {return 0;}
 int listarEmprestimos() {return 0;}
 
 int menuEmprestimos(){
-    printf("MENU DE EMPRESTIMOS.\n");
+    printf("\nMENU DE EMPRESTIMOS.\n");
     int opcao = 0;
     while(opcao != 3){
     printf("[1] Realizar emprestimo. \n");

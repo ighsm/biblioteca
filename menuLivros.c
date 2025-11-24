@@ -9,7 +9,7 @@ int cadastroLivro() {return 0;}
 int menuLivros(){
     int opcao = 0;
     while(opcao != 4){
-    printf("MENU LIVROS. \n");
+    printf("\nMENU LIVROS. \n");
         printf("[1] Cadastrar livros. \n");
         printf("[2] Listar livros. \n");
         printf("[3] Pesquisar livros. \n");
