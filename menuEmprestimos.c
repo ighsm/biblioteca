@@ -1,29 +1,27 @@
 #include <stdio.h>
-#include "menuEmprestimos.h"
-#include "funcoes.h"
-#include "models.h"
-int realizarEmprestimo() {return 0;}
-int listarEmprestimos() {return 0;}
+#include "funcoesEmprestimos.h"
 
-int menuEmprestimos(){
-    printf("\nMENU DE EMPRESTIMOS.\n");
+void menuEmprestimos() {
     int opcao = 0;
-    while(opcao != 3){
-    printf("[1] Realizar emprestimo. \n");
-    printf("[2] Listar emprestimos.\n");
-    printf("[3] Voltar\n");
-    scanf("%d", &opcao);
-        switch(opcao){
-            case 1:
-                realizarEmprestimo();
-                break;
-            case 2:
-                listarEmprestimos();
-                break;
-            case 3:
-                break;
-            default: printf("Opcao invalida ! Tente novamente.\n");
-            }
-    }
-        return 0;
+
+    do {
+        printf("\n--- MENU EMPRESTIMOS ---\n");
+        printf("1 - Realizar emprestimo\n");
+        printf("2 - Devolucao\n");
+        printf("3 - Renovar emprestimo\n");
+        printf("4 - Listar emprestimos ativos\n");
+        printf("5 - Voltar\n");
+        printf("Escolha: ");
+        scanf("%d", &opcao);
+
+        switch(opcao) {
+            case 1: realizarEmprestimo(); break;
+            case 2: realizarDevolucao(); break;
+            case 3: renovarEmprestimo(); break;
+            case 4: listarEmprestimosAtivos(); break;
+            case 5: break;
+            default: printf("Opcao invalida!\n");
+        }
+
+    } while (opcao != 5);
 }

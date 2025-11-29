@@ -1,6 +1,7 @@
 #ifndef DADOS_H
 #define DADOS_H
-
+#define MAX_LIVROS 500
+#define MAX_EMPRESTIMOS 1000
 #include "models.h"
 
 // Vetores 

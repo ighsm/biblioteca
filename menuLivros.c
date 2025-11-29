@@ -1,35 +1,28 @@
 #include <stdio.h>
-#include "menulivros.h"
-#include "funcoes.h"
-#include "models.h"
-int buscarLivros() {return 0;}
-int listarLivros() {return 0;}
-int cadastroLivro() {return 0;}
+#include "funcoesLivros.h"
 
-int menuLivros(){
+void menuLivros() {
     int opcao = 0;
-    while(opcao != 4){
-    printf("\nMENU LIVROS. \n");
-        printf("[1] Cadastrar livros. \n");
-        printf("[2] Listar livros. \n");
-        printf("[3] Pesquisar livros. \n");
-        printf("[4] Voltar. \n");
+
+    do {
+        printf("\n--- MENU LIVROS ---\n");
+        printf("1 - Cadastrar livro\n");
+        printf("2 - Listar livros\n");
+        printf("3 - Buscar por codigo\n");
+        printf("4 - Buscar por titulo\n");
+        printf("5 - Buscar por autor\n");
+        printf("6 - Voltar\n");
+        printf("Escolha: ");
         scanf("%d", &opcao);
 
-        switch(opcao){
-            case 1:
-                cadastroLivro();
-                break;
-            case 2:
-                listarLivros();
-                break;
-            case 3:
-                buscarLivros();
-                break;
-            case 4:
-                break; //Voltar para o inicio
-            default: printf("Opcao invalida! Tente novamente.");
+        switch (opcao) {
+            case 1: cadastrarLivro(); break;
+            case 2: listarLivros(); break;
+            case 3: buscarLivroPorCodigo(); break;
+            case 4: buscarLivroPorTitulo(); break;
+            case 5: buscarLivroPorAutor(); break;
+            case 6: break;
+            default: printf("Opcao invalida!\n");
         }
-    }
-    return 0;
+    } while (opcao != 6);
 }
