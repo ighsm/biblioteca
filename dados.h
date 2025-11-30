@@ -1,15 +1,16 @@
 #ifndef DADOS_H
 #define DADOS_H
-#define MAX_LIVROS 500
-#define MAX_EMPRESTIMOS 1000
+
 #include "models.h"
 
-// Vetores 
-extern Usuario usuarios[100];
-extern Livro livros[100];
-extern Emprestimo emprestimos[100];
+#define MAX_USUARIOS 500
+#define MAX_LIVROS 500
+#define MAX_EMPRESTIMOS 1000
 
-// Contadores
+extern Usuario usuarios[MAX_USUARIOS];
+extern Livro livros[MAX_LIVROS];
+extern Emprestimo emprestimos[MAX_EMPRESTIMOS];
+
 extern int totalUsuarios;
 extern int totalLivros;
 extern int totalEmprestimos;
