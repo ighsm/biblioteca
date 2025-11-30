@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include "menuUsuarios.h"
-#include "funcoes.h"
-#include "models.h"
+#include "funcaoUsuario.h"
 
 
 int menuUsuarios(){
     int opcao = 0;
-    while(opcao != 3){
-        printf("\nMENU DE USUARIOS \n");
+    while(opcao != 4){
+        printf("\n-----MENU DE USUARIOS-----\n");
         printf("[1] Cadastrar usuario.\n");
         printf("[2] Buscar usuario (por matricula). \n");
-        printf("[3] Voltar.");
+        printf("[3] Listar ususarios\n");
+        printf("[4] Voltar.\n");
         scanf("%d", &opcao);
 
         switch(opcao){
@@ -21,6 +21,9 @@ int menuUsuarios(){
                 buscarUsuario();
                 break;
             case 3:
+                listarUsuarios();
+                break;
+            case 4:
                 break; //Voltar para o inicio
         default: 
             printf("Opcao invalida ! Tente novamente.");
